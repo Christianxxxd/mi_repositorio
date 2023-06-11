@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "MiFuente";
+    src: url("../walbaum/Walbaum60pt.ttf");
+}
+
+a {
+    font-family: "MiFuente", sans-serif;
+  }
+
+
+body {
+    padding-top: 4.5rem;
+}
+
+.text-brown-custom {
+    color: #664729;
+}
+
+@media (min-width:768px) {
+    .ofertas-input{
+        width: 50%;
+    }
+}
+
+
+.bg-custom-color {
+    background-color: #664729;
+}
+
+.bg-custom-color2 {
+    background-color: #FFF2E5;
+}
+
+.bg-custom-color3 {
+    background-color: #B38F6B;
+}
+
+.btn.bg-custom-color.text-light.btn-lg {
+    background-color: #804A15; /* Color de fondo personalizado */
+    color: #000000; /* Color de texto personalizado */
+}
+
+.btn.bg-custom-color.text-light.btn-lg:hover {
+    background-color: #9c66309d; /* Mantener el mismo color de fondo al pasar el cursor */
+    color: #000000; /* Mantener el mismo color de texto al pasar el cursor */
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 10px;
+  }
