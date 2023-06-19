@@ -12,6 +12,16 @@ body {
     padding-top: 4.5rem;
 }
 
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
 .text-brown-custom {
     color: #664729;
 }
@@ -61,3 +71,110 @@ body {
 .carousel-indicators {
     display: none;
   }
+
+
+.login-popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.login-popup .popup-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      max-width: 400px;
+      width: 90%;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
+.login-popup .popup-content h3 {
+      margin-bottom: 20px;
+  }
+  
+.login-popup .popup-content .form-control {
+      margin-bottom: 10px;
+  }
+.registration-form {
+    display: none;
+    
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* Estilos personalizados */
+.payment-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+.payment-options {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+.payment-options h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+.payment-options ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+.payment-options ul li {
+            margin-bottom: 10px;
+        }
+.payment-options ul li i {
+            margin-right: 5px;
+        }
+
+.login-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          
+.login-popup1 {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+          }
+          
+.login-popup1 h3 {
+            margin-bottom: 20px;
+          }
+          
+.login-popup1 input,
+.login-popup1 button {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          
+.login-popup1 .mt-3 {
+            font-size: 14px;
+          }

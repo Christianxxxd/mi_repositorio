@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Inicio</title>
 </head>
 <body class="bg-cuerpo">
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top py-3 bg-custom-color3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="imagenes/gata.png" alt="Logo Miniatura" width="50" height="auto">
-                    MOENIA | calzados
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top py-3 bg-custom-color3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/gata.png" alt="Logo Miniatura" width="50" height="auto">
+                MOENIA | calzados
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#borsego">Borsegos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#encharolao">Zapatos</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#borsego">Borsegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#encharolao">Zapatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/logeo.html"><i class="bi bi-person-circle"></i> Iniciar sesión</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-    </header>
+        </div>
+    </nav>
+</header>
+<div class="login-popup" id="loginPopup">
+    <div class="popup-content">
+        <h3>Iniciar sesión</h3>
+        <input type="email" class="form-control" placeholder="Correo electrónico">
+        <input type="password" class="form-control" placeholder="Contraseña">
+        <button class="btn btn-primary">Iniciar sesión</button>
+        <div class="mt-3">
+            <a href="#">¿Olvidaste tu contraseña?</a> | <a href="#">Registrarse por primera vez</a>
+        </div>
+    </div>
+</div>
     <!-- primera accion -->
     <section class="bg-light p-5 text-center text-sm-start">
         <div class="conteiner">
@@ -53,17 +70,17 @@
     </section>
     <section class="bg-custom-color text-light p-5">
         <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">
-                    ¡Comparte tu talla de zapatos y obtén productos perfectos para ti! ¡Únete y mejoremos juntos tu experiencia de compra!
-                </h3>
-                <div class="input-group ofertas-input">
-                    <input type="text" class="form-control" placeholder="N° Talle">
-                    <button class="btn btn-dark btn-lg" type="button">Enviar</button>
-                  </div>
+          <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">
+              ¡Comparte tu talla de zapatos y obtén productos perfectos para ti! ¡Únete y mejoremos juntos tu experiencia de compra!
+            </h3>
+            <div class="input-group ofertas-input">
+              <input type="text" class="form-control" placeholder="N° Talle">
+              <button class="btn btn-dark btn-lg" type="button" onclick="redirigirAGracias()">Enviar</button>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     <!-- metodos de pagos -->
     <section class="p-5">
         <div class="container">
@@ -78,7 +95,7 @@
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
                             </p>
-                            <a href="" class="btn bg-custom-color2">Mas</a>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +109,7 @@
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
                             </p>
-                            <a href="" class="btn bg-custom-color2">Mas</a>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +122,7 @@
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
                             </p>
-                            <a href="" class="btn bg-custom-color2">Mas</a>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
                         </div>
                     </div>
                 </div>
@@ -294,6 +311,23 @@
         var slider = document.querySelector('#slider');
         var carousel = new bootstrap.Carousel(slider);
     </script>
+    <!-- scrip para bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Redigir a gracias! -->
+    <script>
+        function redirigirAGracias() {
+          window.location.href = "pages/gracias.html";
+        }
+        </script>
+      <script>
+        function showLoginPopup() {
+            $('.login-popup').fadeIn();
+        }
+  
+        function hideLoginPopup() {
+            $('.login-popup').fadeOut();
+        }
+    </script>
+      
 </body>
 </html>
