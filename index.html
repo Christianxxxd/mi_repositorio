@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Inicio</title>
+</head>
+<body class="bg-cuerpo">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top py-3 bg-custom-color3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/gata.png" alt="Logo Miniatura" width="50" height="auto">
+                MOENIA | calzados
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#borsego">Borsegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#encharolao">Zapatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/logeo.html"><i class="bi bi-person-circle"></i> Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="login-popup" id="loginPopup">
+    <div class="popup-content">
+        <h3>Iniciar sesión</h3>
+        <input type="email" class="form-control" placeholder="Correo electrónico">
+        <input type="password" class="form-control" placeholder="Contraseña">
+        <button class="btn btn-primary">Iniciar sesión</button>
+        <div class="mt-3">
+            <a href="#">¿Olvidaste tu contraseña?</a> | <a href="#">Registrarse por primera vez</a>
+        </div>
+    </div>
+</div>
+    <!-- primera accion -->
+    <section class="bg-light p-5 text-center text-sm-start">
+        <div class="conteiner">
+            <div class="d-sm-flex align-item-center justify-content-between">
+                <div>
+                    <h1>Temporada <span class="text-brown-custom"> Otoño-Invierno
+                    </span></h1>
+                    <p class="lead my-4">¡Prepárate para el otoño e invierno con los borsegos y zapatos de MOENIA, diseñados para brindarte estilo y comodidad durante toda la temporada! Pisa con confianza sobre la nieve, enfrenta los días más fríos y prolonga tu elegancia con nuestra exclusiva colección. Descubre la excelencia en calzado que te mantendrá a la vanguardia de la moda invernal, solo en nuestra tienda online. ¡No dejes que el clima te detenga, ponte MOENIA y camina con estilo!</p>
+                    <button class="btn bg-custom-color text-light btn-lg">Explorar</button>
+                </div>
+                
+                <img src="imagenes/dada.png" alt="logo" class="img-fluid w-50 d-none d-sm-block">
+            </div>
+        </div>
+    </section>
+    <section class="bg-custom-color text-light p-5">
+        <div class="container">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0">
+              ¡Comparte tu talla de zapatos y obtén productos perfectos para ti! ¡Únete y mejoremos juntos tu experiencia de compra!
+            </h3>
+            <div class="input-group ofertas-input">
+              <input type="text" class="form-control" placeholder="N° Talle">
+              <button class="btn btn-dark btn-lg" type="button" onclick="redirigirAGracias()">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- metodos de pagos -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-custom-color text-light mb-2">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-credit-card-2-back-fill"></i>                            
+                            </div>
+                            <h3 class="card-title mb-3">Tarjeta</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
+                            </p>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-custom-color text-light mb-2">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-currency-dollar"></i>                            
+                            </div>
+                            <h3 class="card-title mb-3">Efectivo</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
+                            </p>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-custom-color text-light mb-2">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-bank2"></i>                            </div>
+                            <h3 class="card-title mb-3">Transferencia</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quis culpa ipsa harum!
+                            </p>
+                            <a href="/pages/pay.html" class="btn bg-custom-color2">Mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seccion borsegos -->
+    <section id="borsego" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="imagenes/image 1.png" alt="borsego" class="rounded-5 rounded-sm img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Borsegos de dama</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus corrupti dolores? Quod, aperiam?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium unde odit praesentium dolore similique!</p>
+                    <a href="" class="btn btn-light mt-3">
+                        <i class="bi bi-send"></i> Explorar 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seccion encharolao -->
+    <section id="encharolao" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-md-6">
+                <div id="slider" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+                  <!-- Indicadores del carrusel -->
+                  <ol class="carousel-indicators">
+                    <li data-bs-target="#slider" data-bs-slide-to="1" class="active"></li>
+                    <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#slider" data-bs-slide-to="3"></li>
+                  </ol>
+          
+                  <!-- Contenido del carrusel -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="imagenes/image 7.png" alt="" class="d-block w-100 img-fluid rounded-5" />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagenes/image 8.png" alt="" class="d-block w-100 img-fluid rounded-5 " />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagenes/image 9.png" alt="" class="d-block w-100 img-fluid rounded-5 " />
+                    </div>
+                  </div>
+          
+                  <!-- Controles del carrusel -->
+                  <a class="carousel-control-prev" href="#slider" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#slider" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+              </div>
+          
+              <div class="col-md-6 p-5">
+                <h2>Zapato encharolado</h2>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus corrupti dolores? Quod, aperiam?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium unde odit praesentium dolore similique!</p>
+                <a href="#" class="btn btn-light mt-3">
+                  <i class="bi bi-send"></i> Explorar
+                </a>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <!-- opiniones de clientes -->
+    <section id="opiniones" class="p-5 bg-custom-color3">
+        <div class="container">
+        <h2 class="text-center text-white">Que dicen nuestros clientes</h2>
+            <p class="lead text-center text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magnam maiores recusandae assumenda aspernatur.
+            </p>
+            <section class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="imagenes/cara2.png" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Milagros Pereyra</h3>
+                            <p class="card-text">Calidad excepcional y durabilidad increíble, los mejores zapatos que he tenido</p>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="imagenes/cara3.png" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Sabrina Lamas</h3>
+                            <p class="card-text">Versátiles y elegantes, los zapatos MOENIA son mi elección para cualquier ocasión</p>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="imagenes/cara3.png" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Griselda Miers</h3>
+                            <p class="card-text">Impermeables y perfectos para el invierno, los borsegos MOENIA son geniales</p>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="imagenes/cara2.png" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Carla Herrera</h3>
+                            <p class="card-text">Increíble comodidad y estilo, MOENIA es mi marca favorita</p>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                            <i class="bi bi-star-fill mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                          <!-- Mapa de Google Maps -->
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d643.215969055319!2d-64.8610842072436!3d-24.22152045430898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1686521124087!5m2!1ses-419!2sar" width="100%" height="100%" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <!-- Textos de contacto -->
+                          <h4 class="text-white">Contacto</h4>
+                          <p class="text-white">Ubicación: Avenida San Luis 585 Departamento N°1</p>
+                          <hr> <!-- Línea separadora -->
+
+                          <!-- Redes sociales -->
+                          <h4 class="text-white">Redes</h4>
+                          <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-facebook text-white"></i>
+                                <a href="https://www.facebook.com/moenia.calzados"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li>
+                                <i class="bi bi-instagram text-white"></i>
+                                <a href="https://www.instagram.com/TuPerfilDeInstagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                          </ul>
+                          <hr> <!-- Línea separadora -->
+
+                          <p class="text-white">Teléfono: (3888) 11319197</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section>
+        <footer class="p-5 bg-custom-color text-white text-center position-relative">
+            <div class="container">
+              <p class="lead">Copyright © 2023 Moe</p>
+              <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle text-white h1"></i>
+              </a>
+            </div>
+          </footer>
+          
+    </section>
+    <script>
+        // Activar el carrusel
+        var slider = document.querySelector('#slider');
+        var carousel = new bootstrap.Carousel(slider);
+    </script>
+    <!-- scrip para bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Redigir a gracias! -->
+    <script>
+        function redirigirAGracias() {
+          window.location.href = "pages/gracias.html";
+        }
+        </script>
+      <script>
+        function showLoginPopup() {
+            $('.login-popup').fadeIn();
+        }
+  
+        function hideLoginPopup() {
+            $('.login-popup').fadeOut();
+        }
+    </script>
+      
+</body>
+</html>
