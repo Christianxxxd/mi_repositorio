@@ -1,7 +1,10 @@
+@import 'variables.scss';
+
 @font-face {
   font-family: "MiFuente";
   src: url("../walbaum/Walbaum60pt.ttf");
 }
+
 a {
   font-family: "MiFuente", sans-serif;
 }
@@ -20,7 +23,7 @@ body {
 }
 
 .text-brown-custom {
-  color: #664729;
+  color: $color-brown;
 }
 
 @media (min-width: 768px) {
@@ -28,35 +31,36 @@ body {
     width: 50%;
   }
 }
+
 .bg-custom-color {
-  background-color: #664729;
+  background-color: $color-brown;
 }
 
 .bg-custom-color2 {
-  background-color: #FFF2E5;
+  background-color: $color-light;
 }
 
 .bg-custom-color3 {
-  background-color: #B38F6B;
+  background-color: $color-dark;
 }
 
 .btn.bg-custom-color.text-light.btn-lg {
-  background-color: #664729;
-  color: #000000;
+  background-color: $btn-bg;
+  color: $btn-text;
 }
 
 .btn.bg-custom-color.text-light.btn-lg:hover {
-  background-color: rgba(156, 102, 48, 0.6156862745);
-  color: #000000;
+  background-color: $btn-bg-hover;
+  color: $btn-text-hover;
 }
 
 .map-container {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: $map-container-border-radius;
 }
 
 .carousel-item img {
-  margin-right: 10px;
+  margin-right: $carousel-item-margin;
 }
 
 .carousel-item:last-child img {
@@ -74,7 +78,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $popup-bg;
 }
 
 .login-popup .popup-content {
@@ -83,15 +87,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 20px;
-  max-width: 400px;
+  padding: $popup-padding;
+  max-width: $popup-max-width;
   width: 90%;
-  border-radius: 5px;
+  border-radius: $popup-border-radius;
   text-align: center;
 }
 
 .login-popup .popup-content h3 {
-  margin-bottom: 20px;
+ margin-bottom: 20px;
 }
 
 .login-popup .popup-content .form-control {
@@ -110,9 +114,9 @@ body {
 }
 
 .login-popup {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 5px;
+  background-color: $popup-bg;
+  padding: $popup-padding;
+  border-radius: $popup-border-radius;
 }
 
 .payment-container {
@@ -123,11 +127,11 @@ body {
 }
 
 .payment-options {
-  max-width: 600px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: $payment-options-max-width;
+  padding: $payment-options-padding;
+  background-color: $payment-container-bg;
+  border-radius: $popup-border-radius;
+  box-shadow: $payment-container-box-shadow;
   text-align: center;
 }
 
@@ -158,10 +162,10 @@ body {
 }
 
 .login-popup1 {
-  width: 300px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: $login-container1-width;
+  padding: $login-container1-padding;
+  background-color: $login-container1-bg;
+  box-shadow: $login-container1-box-shadow;
   text-align: center;
 }
 
@@ -178,5 +182,3 @@ body {
 .login-popup1 .mt-3 {
   font-size: 14px;
 }
-
-/*# sourceMappingURL=styles.css.map */
