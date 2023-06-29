@@ -182,3 +182,16 @@ body {
 .login-popup1 .mt-3 {
   font-size: 14px;
 }
+
+.registration-form {
+    display: none;
+
+}
+
+.empty-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}
